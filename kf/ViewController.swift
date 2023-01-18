@@ -49,10 +49,15 @@ class ViewController: UIViewController{
 
     @objc  func addButtonTap(){
         
-    var menu = [menu]
+
      let busketVC = storyboard?.instantiateViewController(withIdentifier: "busketVC") as! BusketViewController
         self.navigationController?  .pushViewController(busketVC,animated: true)
    foodsTableView.reloadData()
+        
+        _ = storyboard?.instantiateViewController(withIdentifier: "busket_cell") as! BusketViewController
+        _ = [Menu].self
+        self.navigationController?.pushViewController(busketVC, animated: true)
+        foodsTableView.reloadData()
   }
     
 
@@ -80,9 +85,8 @@ extension ViewController: UITableViewDelegate{
 
 
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        print(menu[indexPath.row])
-        var busketVC = storyboard?.instantiateViewController(withIdentifier: "busket_cell") as! BusketViewController
-      // busketVC = [Menu]
-        self.navigationController?.pushViewController(busketVC, animated: true)
+        pizzaarray.append(menu[indexPath.row])
+        
+        print(pizzaarray.count)
     }
 }

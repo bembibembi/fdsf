@@ -8,6 +8,7 @@
 import UIKit
 
 class BusketViewController: UIViewController {
+
     
     @IBOutlet weak var btableView: UITableView!
     
@@ -21,16 +22,16 @@ class BusketViewController: UIViewController {
     @IBOutlet weak var payLabel: UILabel!
     
     
-    override func viewDidLoad() {
-        super.viewDidLoad()
-        
+    override class func awakeFromNib() {
+        super.awakeFromNib()
+    }
         
      
         }
     
     
  
-}
+
   
 
     

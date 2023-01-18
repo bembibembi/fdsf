@@ -95,10 +95,10 @@
             </objects>
             <point key="canvasLocation" x="886.95652173913049" y="63.616071428571423"/>
         </scene>
-        <!--View Controller-->
+        <!--View Controller2-->
         <scene sceneID="L98-J5-6qM">
             <objects>
-                <viewController storyboardIdentifier="busketVC" id="Y7w-0x-8PH" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="secondVC" id="Y7w-0x-8PH" customClass="ViewController2" customModule="kf" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="HU7-EI-Y65">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -155,6 +155,7 @@
                                             </constraints>
                                         </tableViewCellContentView>
                                         <connections>
+                                            <outlet property="btableView" destination="jvJ-YK-Vxc" id="IGp-b6-IhA"/>
                                             <outlet property="foodLabel" destination="MV3-BO-sLd" id="h5e-Rh-NFx"/>
                                             <outlet property="imView" destination="GeC-dg-iVK" id="sXA-KP-aSI"/>
                                             <outlet property="labelName" destination="MV3-BO-sLd" id="DVt-Xo-lP2"/>
@@ -179,6 +180,9 @@
                             <constraint firstItem="jvJ-YK-Vxc" firstAttribute="leading" secondItem="5pt-Yw-gfS" secondAttribute="leading" id="gZT-bQ-wNJ"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="tableView2" destination="jvJ-YK-Vxc" id="RoU-JS-kuy"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Qll-fy-gpw" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
